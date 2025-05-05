@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math'; // For random picking
 
-
 class SafetyTipsScreen extends StatefulWidget {
   @override
   _SafetyTipsScreenState createState() => _SafetyTipsScreenState();
