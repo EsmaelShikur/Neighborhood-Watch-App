@@ -54,6 +54,51 @@ class _ReportActivityScreenState extends State<ReportActivityScreen> {
               maxLines: 4,
             ),
             SizedBox(height: 20),
+            
+            // Location Input
+            TextField(
+              controller: _locationController,
+              decoration: InputDecoration(
+                labelText: 'Location',
+                labelStyle: TextStyle(color: Colors.blueAccent),
+                hintText: 'Where did it happen?',
+                hintStyle: TextStyle(color: Colors.grey[600]),
+                contentPadding: EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 12,
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide(color: Colors.blueAccent, width: 1),
+                ),
+              ),
+            ),
+            SizedBox(height: 30),
+
+            // Submit Button
+            ElevatedButton(
+              onPressed: () {
+                // Add your logic for submitting the report
+                ScaffoldMessenger.of(
+                  context,
+                ).showSnackBar(SnackBar(content: Text('Report Submitted')));
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor:
+                    Colors.blueAccent, // backgroundColor instead of primary
+                padding: EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: Text(  
+                'Submit Report',
+                style: TextStyle(
+                  color: Colors.white, // Set the text color to white
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
           ],
         ),
@@ -61,3 +106,4 @@ class _ReportActivityScreenState extends State<ReportActivityScreen> {
     );
   }
 }
+
