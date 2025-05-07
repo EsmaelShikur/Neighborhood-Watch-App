@@ -1,0 +1,7 @@
+Download the source code to your machine
+Open the source code using vs code editor
+Right click the main.dart file and open termina
+Write flutter run and press enter in the terminal
+Then it will ask you to choose a browser to run
+Choose which browser you want
+It automatically will open the browser and shows you the application
