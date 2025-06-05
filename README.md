@@ -23,7 +23,10 @@ user name
 https://github.com/Abda2912
 
 
-The documentation(assignment) is already there in pdf file With a title of Mobile Application Project 
+The documentation(assignment) is already there in pdf file With a title of Mobile Application Project Documentation 
+
+also the installation guidelines 
+
 
 
 
